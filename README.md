@@ -63,7 +63,7 @@ Finally, we check if this value in dollar is lesser than 2000 USD.
 #### Scenario @ID-0004 - Products Different Than The Searched Product Should Be Cheaper Than The Searched Product
 Finishing our scenarios, we go again for Amazon and search for Iphone. For each results, we are again checking if it is an Iphone or not. However, now:
 
-- 1. If it is an Iphone, we check if it's price is lesser than the current least expensive price
+- 1. If it is an Iphone, we check if its price is lesser than the current least expensive price
 - 2. If it's not an Iphone, we add this product to a List
 
 After all results are analyzed, then we check if every product from the list has its price lesser than the least expensive Iphone. All of them must be cheaper than the cheapest Iphone for this scenario to pass.
