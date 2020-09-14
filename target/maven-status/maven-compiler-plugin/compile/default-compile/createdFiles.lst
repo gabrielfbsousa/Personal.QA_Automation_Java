@@ -1,0 +1,9 @@
+Tests/AmazonTests.class
+Support/Paths.class
+StepDefinitions/StepDefinitions.class
+Pages/WebPage.class
+BrowsingSettings/Setup.class
+Pages/AmazonPage.class
+Pages/GooglePage.class
+Support/RestRequests.class
+Tests/GoogleTests.class
