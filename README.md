@@ -35,11 +35,13 @@ This project was entirely built using IntelliJ, with ItelliJ's Cucumber For Java
 
 Results, possible failures and prints of what was found at each scenario are all shown into the Terminal. This is important to validate that everything is indeed working. Failed scenarios, of course, will be shown as failed at the end.
 
+--- 
 #### Scenario @ID-0001 - Test Setup
 In this scenario, we open the browser and navigate to Google's search page, initially empty. It's required that we fill it with a searching phrase, in this case, "Amazon Brasil". By submitting, a list of results should appear, and the one with "www.amazon.com.br" should be clicked.
 
 At the code, the list of results is analyzed, and the one that has a link matching our parameter from the feature is the one that is selected. A validation is made checking if the URL the browser currently is indeed corresponds to the one we asked to click.
 
+--- 
 #### Scenario @ID-0002 - 80% Of Shown Products Should Be Exclusively The Searched Product
 For this scenario, we already browse to Amazon's webpage, in order to make the execution faster, instead of going all the way through Google. There, we locate the Amazon's search bar and type something we want to search, in this case, "iPhone", and submit. A page with the found results should be shown, and the code waits until it's loaded in order to move on. Specifically, it waits for the lateral bar, with its filters, to show up, indicating everything is good to go.
 
@@ -49,7 +51,7 @@ Then, we count how many "iPhone" were found. In order to better filter this, we 
 
 Finally, we check if at least more than 80% of the results are indeed the iPhone. Again, we use the same criteria above, count the quantity of results, and compare it over the total to see if it's more or less than 80%. Please notice that the results often shown are much below 80%, and thus this scenario fails every time (it's a correct behaviour. It really should fail, since we are really finding less results than 80%). However, if changing the parameter at the feature to some levels below (like say, 50%), it passes, since we really have at least this value.
 
-
+--- 
 #### Scenario @ID-0003 - The Higher Price In The First Page Can't Be Greater Than U$2000
 In order to create this scenario, we again navigate to Amazon and search for "Iphone". This time, using the same criteria as before to filter what is really an Iphone from the results, we make comparisons, checking one by one, to see if each iPhone is more expensive than the current most expensive one. 
 
@@ -57,6 +59,7 @@ After finding the most expensive from all of the results, we then call an extern
 
 Finally, we check if this value in dollar is lesser than 2000 USD.
 
+--- 
 #### Scenario @ID-0004 - Products Different Than The Searched Product Should Be Cheaper Than The Searched Product
 Finishing our scenarios, we go again for Amazon and search for Iphone. For each results, we are again checking if it is an Iphone or not. However, now:
 
