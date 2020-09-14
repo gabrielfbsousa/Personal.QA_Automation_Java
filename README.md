@@ -43,7 +43,7 @@ At the code, the list of results is analyzed, and the one that has a link matchi
 
 --- 
 #### Scenario @ID-0002 - 80% Of Shown Products Should Be Exclusively The Searched Product
-For this scenario, we already browse to Amazon's webpage, in order to make the execution faster, instead of going all the way through Google. There, we locate the Amazon's search bar and type something we want to search, in this case, "iPhone", and submit. A page with the found results should be shown, and the code waits until it's loaded in order to move on. Specifically, it waits for the lateral bar, with its filters, to show up, indicating everything is good to go.
+For this scenario, we already browse to Amazon's webpage, in order to make the execution faster, instead of going all the way through Google. There, we locate the Amazon's search bar and type something we want to search, in this case, "iPhone", and submit. A page with the found results should be shown, and the code waits until it's loaded in order to move on. Specifically, it waits for the side bar, with its filters, to show up, indicating everything is good to go.
 
 After that, we count how many products were returned by Amazon's search. It's only a counting from elements, not doing any filtering
 
